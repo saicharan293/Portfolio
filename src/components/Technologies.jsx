@@ -1,6 +1,6 @@
 import React from 'react'
-import { BiLogoFlask, BiLogoPostgresql } from 'react-icons/bi'
-import { FaNodeJs, FaPython } from 'react-icons/fa'
+import { BiLogoFlask, BiLogoPostgresql, BiLogoTailwindCss } from 'react-icons/bi'
+import { FaCss3Alt, FaHtml5, FaNodeJs, FaPython } from 'react-icons/fa'
 import { RiReactjsLine } from 'react-icons/ri'
 import { SiMongodb } from 'react-icons/si'
 
@@ -26,6 +26,15 @@ const Technologies = () => {
             </div>
             <div className="rounded-2xl border-4 border-neutral-800 p-4">
                 <BiLogoFlask className='text-7xl text-gray-400'/>
+            </div>
+            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaHtml5 className='text-7xl text-orange-600'/>
+            </div>
+            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaCss3Alt className='text-7xl text-blue-400'/>
+            </div>
+            <div className="rounded-2xl border-4 border-neutral-800 p-4">
+                <BiLogoTailwindCss className='text-7xl text-blue-600'/>
             </div>
         </div>
     </div>
