@@ -18,14 +18,18 @@ const Projects = () => {
                         initial={{opacity: 0, x: -100}}
                         transition={{duration: 1}}
                         className="w-full lg:w-1/4">
-                        <img width={150} height={150} className='mb-6 rounded' src={project.image} alt={project.title} />
+                        <a href={project.link} target='_blank'>
+                            <img width={150} height={150} className='mb-6 rounded' src={project.image} alt={project.title} />
+                        </a>
                     </motion.div>
                     <motion.div 
                         whileInView={{opacity: 1, x: 0}}
                         initial={{opacity: 0, x: 100}}
                         transition={{duration: 1}}
                         className="w-full max-w-xl lg:w-34">
-                        <h6 className='mb-2 font-semibold'>{project.title}</h6>
+                        <a href={project.link} target='_blank'>
+                            <h6 className='mb-2 font-semibold'>{project.title}</h6>
+                        </a>
                         <p className='mb-4 text-neutral-400'>{project.description}</p>
                         {project.technologies.map((tech,idx)=>(
                             <span key={idx} className='mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-900'>{tech}</span>

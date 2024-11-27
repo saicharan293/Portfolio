@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import currency from "../assets/projects/currency.png";
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React , as well as back-end technologies like Node.js, Python, MySQL, PostgreSQL, and MongoDB.`;
 
@@ -21,11 +22,12 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
+    title: "Currency Converter Website",
+    link:"https://currencyconverterrjs.netlify.app/",
+    image: currency,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "A Currency Converter app that dynamically converts amounts between currencies in real-time, featuring a swap option, responsive design, and precise formatting.",
+    technologies: ["HTML", "Tailwind CSS", "React Js"],
   },
   {
     title: "Task Management App",
