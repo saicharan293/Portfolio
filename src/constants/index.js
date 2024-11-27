@@ -39,6 +39,14 @@ export const PROJECTS = [
     technologies: ["React (Vite)","Node.js", "Express", "Socket.IO", "CORS"],
   },
   {
+    title: "Mini Docs App",
+    link:"https://minidocsreact.netlify.app/",
+    image: project4,
+    description:
+      "A dynamic card interface that allows users to drag cards within constraints, view file information, and download the card's description content as a text file. Features include smooth animations and customizable tags.",
+    technologies: ["React", "Framer Motion", "JavaScript (Blob API)", "React Icons", "CSS (Tailwind CSS)"],
+  },
+  {
     title: "Task Management App",
     image: project2,
     description:
