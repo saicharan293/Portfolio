@@ -3,6 +3,7 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import currency from "../assets/projects/currency.png";
+import realTimeChat from '../assets/projects/realTimeChat.png'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React , as well as back-end technologies like Node.js, Python, MySQL, PostgreSQL, and MongoDB.`;
 
@@ -28,6 +29,14 @@ export const PROJECTS = [
     description:
       "A Currency Converter app that dynamically converts amounts between currencies in real-time, featuring a swap option, responsive design, and precise formatting.",
     technologies: ["HTML", "Tailwind CSS", "React Js"],
+  },
+  {
+    title: "Real Time Chat App",
+    link:"https://chatappusingreactnode.netlify.app/",
+    image: realTimeChat,
+    description:
+      "A powerful real-time chat application offering dynamic room management, instant messaging, and robust CORS support for seamless cross-origin communication.",
+    technologies: ["React (Vite)","Node.js", "Express", "Socket.IO", "CORS"],
   },
   {
     title: "Task Management App",
