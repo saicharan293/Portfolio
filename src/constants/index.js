@@ -4,6 +4,7 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import currency from "../assets/projects/currency.png";
 import realTimeChat from '../assets/projects/realTimeChat.png'
+import docs from '../assets/projects/docs.png'
 
 export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. I have honed my skills in front-end technologies like React , as well as back-end technologies like Node.js, Python, MySQL, PostgreSQL, and MongoDB.`;
 
@@ -41,7 +42,7 @@ export const PROJECTS = [
   {
     title: "Mini Docs App",
     link:"https://minidocsreact.netlify.app/",
-    image: project4,
+    image: docs,
     description:
       "A dynamic card interface that allows users to drag cards within constraints, view file information, and download the card's description content as a text file. Features include smooth animations and customizable tags.",
     technologies: ["React", "Framer Motion", "JavaScript (Blob API)", "React Icons", "CSS (Tailwind CSS)"],
