@@ -72,7 +72,7 @@ const Admin = () => {
 
     // Submit the new project data to the backend
     try {
-      const response = await axios.post('http://localhost:5000/projects', formData, {
+      const response = await axios.post('https://my-website-backend-1keq.onrender.com/projects', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
