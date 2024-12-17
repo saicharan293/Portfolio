@@ -1,46 +1,39 @@
+// server.js
+
 const express = require('express');
-const multer = require('multer');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 const path = require('path');
 
+// Import routes
+const projectRoutes = require('./routes/projectRoutes');
+
+// Initialize dotenv
+dotenv.config();
+
+// Initialize express app
 const app = express();
+
+// Middleware
 app.use(cors());
-app.use(express.json());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-// Set up Multer for file uploads
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, './src/assets/projects'); // Save images to this folder
-  },
-  filename: (req, file, cb) => {
-    cb(null, `${Date.now()}-${file.originalname}`);
-  },
-});
+// MongoDB connection
+mongoose.connect(process.env.MONGO_URI)
+  .then(() => console.log('MongoDB Connected'))
+  .catch((error) => console.error('MongoDB connection error:', error));
 
-const upload = multer({ storage });
+// Routes
+app.use('/projects', projectRoutes); // Use project routes for handling project related APIs
 
-// Endpoint to handle project submission
-app.post('/api/projects', upload.single('image'), (req, res) => {
-  const { title, link, description, technologies } = req.body;
-
-  if (!title || !link || !description || !technologies || !req.file) {
-    return res.status(400).json({ message: 'All fields are required.' });
-  }
-
-  res.status(200).json({
-    message: 'Project added successfully!',
-    project: {
-      title,
-      link,
-      description,
-      technologies: technologies.split(',').map((tech) => tech.trim()),
-      image: req.file.filename,
-    },
-  });
-});
+// Serve static files (for cloudinary uploads)
+app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Start the server
-const PORT = 5000;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+const port = 5000;
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
 });

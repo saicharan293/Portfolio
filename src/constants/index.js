@@ -48,13 +48,13 @@ export const PROJECTS = [
       "A dynamic card interface that allows users to drag cards within constraints, view file information, and download the card's description content as a text file. Features include smooth animations and customizable tags.",
     technologies: ["React", "Framer Motion", "JavaScript (Blob API)", "React Icons", "CSS (Tailwind CSS)"],
   },
-  {
-    title: "Aladdin, Magic Carpet",
-    link: "https://aladin-carpet.netlify.app/", 
-    image:project5,
-    description: "A fun and dynamic React game where you control Aladdin on his magic carpet, dodging obstacles and avoiding collisions while collecting points.",
-    technologies: ["React", "JavaScript", "CSS", "HTML"]
-  },
+  // {
+  //   title: "Aladdin, Magic Carpet",
+  //   link: "https://aladin-carpet.netlify.app/", 
+  //   image:project5,
+  //   description: "A fun and dynamic React game where you control Aladdin on his magic carpet, dodging obstacles and avoiding collisions while collecting points.",
+  //   technologies: ["React", "JavaScript", "CSS", "HTML"]
+  // },
   {
     title: "Portfolio Website",
     image: project3,
