@@ -33,7 +33,7 @@ app.use('/projects', projectRoutes); // Use project routes for handling project 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Start the server
-const port = 5000;
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
