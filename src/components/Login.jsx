@@ -8,8 +8,8 @@ const Login = ({ closeModal }) => {
   const navigate = useNavigate();
 
   const MOCK_CREDENTIALS = {
-    username: 'admin',
-    password: 'password',
+    username: 'sai charan',
+    password: 'shivaay',
   };
 
   const handleChange = (e) => {
