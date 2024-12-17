@@ -2,6 +2,7 @@ import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
+import project5 from "../assets/projects/project-5.png";
 import currency from "../assets/projects/currency.png";
 import realTimeChat from '../assets/projects/realTimeChat.png'
 import docs from '../assets/projects/docs.png'
@@ -48,11 +49,11 @@ export const PROJECTS = [
     technologies: ["React", "Framer Motion", "JavaScript (Blob API)", "React Icons", "CSS (Tailwind CSS)"],
   },
   {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    title: "Aladdin, Magic Carpet",
+    link: "https://aladin-carpet.netlify.app/", 
+    image:project5,
+    description: "A fun and dynamic React game where you control Aladdin on his magic carpet, dodging obstacles and avoiding collisions while collecting points.",
+    technologies: ["React", "JavaScript", "CSS", "HTML"]
   },
   {
     title: "Portfolio Website",
